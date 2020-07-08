@@ -4,10 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.AdapterView
-import android.widget.ArrayAdapter
-import android.widget.RadioGroup
-import android.widget.Spinner
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -98,6 +95,12 @@ class Tutorial3Activity : AppCompatActivity() {
             adapter = FoodImageAdapter(emptyList())
             imageRecyclerView = this
         }
+
+        findViewById<Button>(R.id.tutorial3_ex_button)?.apply {
+            setOnClickListener {
+                startActivity(Tutorial3ExActivity.callingIntent(applicationContext))
+            }
+        }
     }
 
     private fun getRetIdList(arrayId: Int): List<Int>{
@@ -109,4 +112,5 @@ class Tutorial3Activity : AppCompatActivity() {
         ids.recycle()
         return resIdList
     }
+
 }

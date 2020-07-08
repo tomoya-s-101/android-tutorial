@@ -19,5 +19,6 @@
     <string name="tutorial3_vertical">Vertical</string>
     <string name="tutorial3_horizontal">Horizontal</string>
     <string name="tutorial3_grid">Grid</string>
+    <string name="tutorial3_ex_button">発展課題3</string>
 
 </resources>

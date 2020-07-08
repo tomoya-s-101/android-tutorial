@@ -13,7 +13,6 @@ class BlueFragment(): Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.blue_fragment,container,false)
-        return view
+        return inflater.inflate(R.layout.blue_fragment,container,false)
     }
 }

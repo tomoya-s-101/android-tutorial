@@ -28,8 +28,7 @@ class Tutorial3ExActivity: AppCompatActivity() {
     private fun intiViewPager2WithFragments() {
         Log.i("Tutorial3ExActivity", "intiViewPager2WithFragments")
         val viewPager:ViewPager2 = findViewById(R.id.viewpager2)
-        val adapter = ViewPager2Adapter(supportFragmentManager,lifecycle)
-        viewPager.adapter = adapter
+        viewPager.adapter = ViewPager2Adapter(supportFragmentManager,lifecycle)
 
         val tabLayout = findViewById<TabLayout>(R.id.tab_layout)
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->

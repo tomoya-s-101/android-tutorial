@@ -13,7 +13,6 @@ class YellowFragment(): Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.yellow_fragment,container,false)
-        return view
+        return inflater.inflate(R.layout.yellow_fragment,container,false)
     }
 }

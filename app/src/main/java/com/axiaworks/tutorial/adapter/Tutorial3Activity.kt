@@ -3,6 +3,7 @@ package com.axiaworks.tutorial.adapter
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.view.MenuItem
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
@@ -101,6 +102,18 @@ class Tutorial3Activity : AppCompatActivity() {
                 startActivity(Tutorial3ExActivity.callingIntent(applicationContext))
             }
         }
+        supportActionBar?.apply {
+            title = getString(R.string.main_study_adapter)
+            setDisplayHomeAsUpEnabled(true)
+        }
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        if (item.itemId == android.R.id.home) {
+            onBackPressed()
+            return true
+        }
+        return super.onOptionsItemSelected(item)
     }
 
     private fun getRetIdList(arrayId: Int): List<Int>{

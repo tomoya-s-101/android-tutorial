@@ -25,6 +25,7 @@
         <activity android:name=".adapter.Tutorial3Activity"/>
         <activity android:name=".adapter.Tutorial3ExActivity"/>
         <activity android:name=".library.Tutorial4Activity"/>
+        <activity android:name=".library.Tutorial4ExActivity"/>
 
     </application>
 

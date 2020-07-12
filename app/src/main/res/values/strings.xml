@@ -37,5 +37,8 @@
     <string name="tutorial4_user_name">名前</string>
     <string name="tutorial4_user_age">年齢</string>
     <string name="tutorial4_user_gender">性別</string>
+    <string name="tutorial4_ex_button">発展課題４</string>
+    <string name="tutorial4_ex_edit">入力してください</string>
+    <string name="tutorial4_ex_qr">QRコード生成</string>
 
 </resources>

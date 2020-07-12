@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.axiaworks.tutorial.R
@@ -55,6 +56,15 @@ class Tutorial4Activity: AppCompatActivity() {
             title = getString(R.string.main_study_gradle)
             setDisplayHomeAsUpEnabled(true)
         }
+        findViewById<Button>(R.id.tutorial4_ex_button)?.apply {
+            setOnClickListener {
+                startActivity(Tutorial4ExActivity.callingIntent(applicationContext))
+            }
+        }
+        //ボタンのインスタンスをとってくるｰ>
+        // そのボタンにイベントリスナーを設定ｰ>
+        // 実行する処理を記述
+
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

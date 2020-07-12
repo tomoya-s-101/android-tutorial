@@ -15,3 +15,4 @@ enum class EffectType {
     TOON,
     CONTRACT,
 }
+

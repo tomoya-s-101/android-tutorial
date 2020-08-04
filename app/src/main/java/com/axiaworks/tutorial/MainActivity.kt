@@ -7,6 +7,7 @@ import com.axiaworks.tutorial.adapter.Tutorial3Activity
 import com.axiaworks.tutorial.fragment.Tutorial5Activity
 import com.axiaworks.tutorial.layout.Tutorial2Activity
 import com.axiaworks.tutorial.library.Tutorial4Activity
+import com.axiaworks.tutorial.mvvm.Tutorial6Activity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,6 +35,12 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.tutorial5_button)?.apply {
             setOnClickListener{
                 startActivity(Tutorial5Activity.callingIntent(applicationContext))
+            }
+        }
+
+        findViewById<Button>(R.id.tutorial6_button)?.apply {
+            setOnClickListener {
+                startActivity(Tutorial6Activity.callingIntent(applicationContext))
             }
         }
     }

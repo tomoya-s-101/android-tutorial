@@ -31,3 +31,11 @@ fun ImageView.userImage(userData: UserData) {
             .into(this)
     }
 }
+
+@BindingAdapter("setIconUrl")
+fun ImageView.setIconUrl(url: String) {
+    Glide.with(this)
+        .load(url)
+        .apply(RequestOptions.bitmapTransform(RoundedCorners(30)))
+        .into(this)
+}

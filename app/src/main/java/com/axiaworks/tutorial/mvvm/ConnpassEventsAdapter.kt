@@ -9,7 +9,7 @@ import com.axiaworks.tutorial.databinding.ItemConnpassItemBinding
 import com.axiaworks.tutorial.mvvm.response.ConnpassItem
 
 class ConnpassEventsAdapter(
-    private var eventsItems: List<ConnpassItem>
+    private var eventItems: List<ConnpassItem>
 ) : RecyclerView.Adapter<ConnpassEventsAdapter.ViewHolder>() {
 
     var onClickListener: ((ConnpassItem) -> Unit)? = null
@@ -22,10 +22,10 @@ class ConnpassEventsAdapter(
         )
     }
 
-    override fun getItemCount() = eventsItems.size
+    override fun getItemCount() = eventItems.size
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.onBind(eventsItems[position], onClickListener)
+        holder.onBind(eventItems[position], onClickListener)
     }
 
     class ViewHolder(private val binding: ItemConnpassItemBinding) :
@@ -39,7 +39,7 @@ class ConnpassEventsAdapter(
     }
 
     fun setList(list: List<ConnpassItem>) {
-        eventsItems = list
+        eventItems = list
         notifyDataSetChanged()
     }
 }

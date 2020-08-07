@@ -39,6 +39,9 @@ class Tutorial6Activity : AppCompatActivity() {
             searchButton.setOnClickListener {
                 viewModel.fetchTagItems("android")
             }
+            tutorial6ExButton.setOnClickListener {
+                startActivity(Tutorial6ExActivity.callingIntent(applicationContext))
+            }
         }
 
         bindViews()

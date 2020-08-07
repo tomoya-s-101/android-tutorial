@@ -30,6 +30,7 @@
         <activity android:name=".library.Tutorial4ExActivity"/>
         <activity android:name=".fragment.Tutorial5Activity"/>
         <activity android:name=".mvvm.Tutorial6Activity" />
+        <activity android:name=".mvvm.Tutorial6ExActivity"/>
 
     </application>
 

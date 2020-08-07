@@ -56,5 +56,8 @@
     <string name="tutorial6_comment_num">コメント数: </string>
     <string name="tutorial6_like_count">いいね: </string>
     <string name="tutorial6_reaction_count">リアクション: </string>
+    <string name="tutorial6_ex_button">発展課題６</string>
+    <string name="tutorial6_ex_open_time">開催日時</string>
+    <string name="tutorial6_ex_organizer">主催者</string>
 
 </resources>

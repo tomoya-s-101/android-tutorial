@@ -1,7 +1,9 @@
 package com.axiaworks.tutorial
 
 import android.app.Application
+import com.axiaworks.tutorial.mvvm.Tutorial6ExViewModel
 import com.axiaworks.tutorial.mvvm.Tutorial6ViewModel
+import com.axiaworks.tutorial.mvvm.repository.ConnpassRepository
 import com.axiaworks.tutorial.mvvm.repository.QiitaRepository
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import com.squareup.moshi.Moshi
@@ -27,7 +29,9 @@ class TutorialApplication : Application() {
     private fun setupKoin() {
         val module: Module = module {
             viewModel { Tutorial6ViewModel() }
+            viewModel { Tutorial6ExViewModel() }
             single { createRetrofitService("https://qiita.com/", QiitaRepository::class.java) }
+            single { createRetrofitService("https://connpass.com/", ConnpassRepository::class.java) }
         }
 
         startKoin {
